@@ -1,6 +1,6 @@
 class HashRing:
     def __init__(self,size = 4):
-        self.servers = [[] * size]
+        self.servers = [[] for i in range(size)]
 
     def view_server_keys(self):
         for idx, server in enumerate(self.servers):
